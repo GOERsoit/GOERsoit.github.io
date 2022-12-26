@@ -11,50 +11,46 @@
         <link rel="shortcut icon" href="tubiao.ico">
 
     </head>  
-    
-    <body>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            border: 1px solid #e7e7e7;
+            background-color: #f3f3f3;
+        }
         
-    <body background="1.jpg" style=" background-repeat:no-repeat ;background-size:100% 100%;background-attachment: fixed;">  
-        <style>
-            ul
-            {
-            list-style-type:none;
-            margin:0;
-            padding:0;
-            overflow:hidden;
-            }
-            li
-            {
-            float:left;
-            }
-            a:link,a:visited
-            {
-            display:block;
-            width:140px;
-            font-weight:bold;
-            color:#FFFFFF;
-            background-color:#292828;
-            text-align:center;
-            padding:15px;
-            text-decoration:none;
-            text-transform:uppercase;
-            }
-            a:hover,a:active
-            {
-            background-color:#474444;
-            }
-            </style>
-            </head>
-            <body>
-            <ul>
-            <li><a href="https://goersoit.github.io">导航页</a></li>   
-            <li><a href="folder/Game">玩玩游戏</a></li>
-            <li><a href="folder/ruanjian">全部收录</a></li>
-            <li><a href="folder/active">我的文章</a></li>
-            <li><a href="folder/Mr_GOER">联系我们</a></li>
-            
+        li {
+            float: left;
+        }
+        
+        li a {
+            display: block;
+            color: #666;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        li a:hover:not(.active) {
+            background-color: #ddd;
+        }
+        
+        li a.active {
+            color: white;
+            background-color: #4CAF50;
+        }
+        </style>    
+    <body>
+        <ul>
+            <li><a class="active" href="https://goersoit.github.io">导航</a></li>
+            <li><a href="https://goersoit.github.io/folder/Game">收录</a></li>
+            <li><a href="https://goersoit.github.io/folder/ruanjian">游戏</a></li>
+            <li><a href="https://goersoit.github.io/folder/active">文章</a></li>
+            <li><a href="https://goersoit.github.io/folder/Mr_GOER">联系</a></li> 
             </ul>
-            <br/><p align="center"><font size="7">欢迎来到Mr.GOER的资源分享网站<font size="3">本站已收录7个东东</font></font><br/></p><br>
+        <body background="1.jpg" style=" background-repeat:no-repeat ;background-size:100% 100%;background-attachment: fixed;">  
     </body>  
-
+    <br/><p align="center"><font size="7">欢迎来到Mr.GOER的资源分享网站<font size="3">本站已收录7个东东</font></font><br/></p><br>
     </html>

@@ -10,42 +10,44 @@
     </head> 
     <body>
         <style>
-            ul
-            {
-            list-style-type:none;
-            margin:0;
-            padding:0;
-            overflow:hidden;
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                border: 1px solid #e7e7e7;
+                background-color: #f3f3f3;
             }
-            li
-            {
-            float:left;
+            
+            li {
+                float: left;
             }
-            a:link,a:visited
-            {
-            display:block;
-            width:140px;
-            font-weight:bold;
-            color:#FFFFFF;
-            background-color:#292828;
-            text-align:center;
-            padding:15px;
-            text-decoration:none;
-            text-transform:uppercase;
+            
+            li a {
+                display: block;
+                color: #666;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
             }
-            a:hover,a:active
-            {
-            background-color:#474444;
+            
+            li a:hover:not(.active) {
+                background-color: #ddd;
             }
-            </style>
-            </head>
-            <body>
+            
+            li a.active {
+                color: white;
+                background-color: #4CAF50;
+            }
+            </style>    
+        <body>
             <ul>
-            <li><a href="https://goersoit.github.io">导航页</a></li>   
-            <li><a href="https://goersoit.github.io/folder/Game">玩玩游戏</a></li>
-            <li><a href="https://goersoit.github.io/folder/ruanjian">全部收录</a></li>
-            <li><a href="https://goersoit.github.io/folder/active">我的文章</a></li>
-            <li><a href="https://goersoit.github.io/folder/Mr_GOER">联系我们</a></li>
+                <li><a href="https://goersoit.github.io">导航</a></li>
+                <li><a href="https://goersoit.github.io/folder/Game">收录</a></li>
+                <li><a href="https://goersoit.github.io/folder/ruanjian">游戏</a></li>
+                <li><a href="https://goersoit.github.io/folder/active">文章</a></li>
+                <li><a class="active" href="https://goersoit.github.io/folder/Mr_GOER">联系</a></li> 
+                </ul>
             
             </ul>
         <br/><p align="center"><font size="7">Mr.GOER的全部联系方式</font><br/></p><br>
