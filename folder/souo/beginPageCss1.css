@@ -1,0 +1,96 @@
+*{
+    /* 清除所有的padding、margin和border */
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  body {
+    background-color: #ffffff00;
+    /* 长按鼠标并滑动的时候回选中框内的内容，这里禁止选中所有文本。 */
+    -moz-user-select:none;/*火狐*/
+    -webkit-user-select:none;/*webkit浏览器*/
+    -ms-user-select:none;/*IE10*/
+    -khtml-user-select:none;/*早期浏览器*/
+    user-select:none;
+  }
+  
+  /*
+   * 以下是背景盒子的属性设置
+   */
+  
+  /* 两个盒子的属性主要是为了进行定位 */
+  .backgroundBox1 {
+    background-color: inherit;
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    margin-left: -300px;
+    top: 50%;
+    margin-top: -200px;
+  }
+  .backgroundBox2 {
+    background-color: inherit;
+    width: inherit;
+    height: inherit;
+    position: relative;
+  }
+  
+  /*
+   * 以下是有关的搜索框的布局
+   */
+  
+  #backgroundFormStyle {
+    position: relative;
+    height: 20%;
+    width: inherit;
+  }
+  #searchForm {
+    /* 搜索框的属性设置 */
+    position: absolute;
+    width: 500px;
+    height: 40px;
+    /* 盒子居中 */
+    top: 50%;
+    margin-top: -20px;
+    left: 50%;
+    margin-left: -250px;
+    /* 圆角属性，可以根据自己的喜好调节，50%盒子就是个圆形 */
+    border-radius: 20px;
+    /* 两个阴影属性，做出凸起的效果。 */
+    /* 第一个阴影为白色，向左和上移动。 */
+    /* 第二个阴影为黑色，向右和下移动。 */
+    /* 参数分别为：x方向偏移 y方向偏移 阴影模糊半径 颜色 */
+    box-shadow: 12px 12px 20px rgba(0, 0, 0, 0.2),
+     -12px -12px 20px rgba(110, 32, 32, 0);
+  }
+  /* 注意：这里是搜索框的样式，和网站入口按钮不同，没有鼠标悬停点击等状态效果。 */
+  #searchInput {
+    width: 90%;
+    height: inherit;
+    margin-left: 20px;
+    background-color: inherit;
+    /* outline用来清除点击搜索框的时候出现一个黑色小边框 */
+    outline: none;
+  }
+  #confirmInput {
+    /* 把确认按钮变成黑色边框小圆圈 */
+    width: 5%;
+    height: 20px;
+    width: 20px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    right: 10;
+    top: 50%;
+    margin-top: -10px;
+    border-radius: 50%;
+    border-color: black;
+    border-width: thick;
+    border-style: solid;
+    outline: none;
+  }
+  #confirmInput:hover {
+    /* 鼠标悬停到确认按钮上变成小手手 */
+    cursor: pointer;
+  }
+
